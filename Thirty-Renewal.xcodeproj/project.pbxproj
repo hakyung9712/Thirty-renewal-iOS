@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75C480B82A3A856A00BAAE25 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C480B72A3A856A00BAAE25 /* NetworkRequest.swift */; };
+		75C480BA2A3A859500BAAE25 /* JSONConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C480B92A3A859500BAAE25 /* JSONConvertible.swift */; };
+		75C480BC2A3A872A00BAAE25 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C480BB2A3A872A00BAAE25 /* NetworkConstants.swift */; };
+		75C480BE2A3A88EF00BAAE25 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C480BD2A3A88EF00BAAE25 /* NetworkLogger.swift */; };
+		75C480C02A3A891800BAAE25 /* NativeRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C480BF2A3A891800BAAE25 /* NativeRequestable.swift */; };
 		F918B53A2A37471900293925 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F918B5392A37471900293925 /* SplashView.swift */; };
 		F918B53C2A37472400293925 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F918B53B2A37472400293925 /* LoginView.swift */; };
 		F918B53E2A37515A00293925 /* SNSLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F918B53D2A37515A00293925 /* SNSLoginView.swift */; };
@@ -57,6 +62,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75C480B72A3A856A00BAAE25 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		75C480B92A3A859500BAAE25 /* JSONConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConvertible.swift; sourceTree = "<group>"; };
+		75C480BB2A3A872A00BAAE25 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		75C480BD2A3A88EF00BAAE25 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		75C480BF2A3A891800BAAE25 /* NativeRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeRequestable.swift; sourceTree = "<group>"; };
 		F918B5392A37471900293925 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		F918B53B2A37472400293925 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F918B53D2A37515A00293925 /* SNSLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSLoginView.swift; sourceTree = "<group>"; };
@@ -127,6 +137,11 @@
 		F918B5372A3746D800293925 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				75C480BF2A3A891800BAAE25 /* NativeRequestable.swift */,
+				75C480B72A3A856A00BAAE25 /* NetworkRequest.swift */,
+				75C480BB2A3A872A00BAAE25 /* NetworkConstants.swift */,
+				75C480BD2A3A88EF00BAAE25 /* NetworkLogger.swift */,
+				75C480B92A3A859500BAAE25 /* JSONConvertible.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -382,10 +397,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C480BC2A3A872A00BAAE25 /* NetworkConstants.swift in Sources */,
+				75C480B82A3A856A00BAAE25 /* NetworkRequest.swift in Sources */,
 				F951159929FF96C700552C06 /* ContentView.swift in Sources */,
 				F951159729FF96C700552C06 /* Thirty_RenewalApp.swift in Sources */,
 				F918B54A2A3757FE00293925 /* MyMainView.swift in Sources */,
+				75C480BA2A3A859500BAAE25 /* JSONConvertible.swift in Sources */,
 				F918B53C2A37472400293925 /* LoginView.swift in Sources */,
+				75C480BE2A3A88EF00BAAE25 /* NetworkLogger.swift in Sources */,
 				F918B55A2A375D2A00293925 /* MyInfoView.swift in Sources */,
 				F918B55E2A375D3F00293925 /* MyNoticeSettingView.swift in Sources */,
 				F918B5562A375D0F00293925 /* CommunityDetailView.swift in Sources */,
@@ -402,6 +421,7 @@
 				F918B5582A375D2300293925 /* MySettingView.swift in Sources */,
 				F918B5482A3757E900293925 /* CommunityMainView.swift in Sources */,
 				F918B53E2A37515A00293925 /* SNSLoginView.swift in Sources */,
+				75C480C02A3A891800BAAE25 /* NativeRequestable.swift in Sources */,
 				F918B5622A375D5B00293925 /* MyCompleteChallengeListView.swift in Sources */,
 				F918B5602A375D4D00293925 /* MyShareRangeSettingView.swift in Sources */,
 				F918B53A2A37471900293925 /* SplashView.swift in Sources */,
