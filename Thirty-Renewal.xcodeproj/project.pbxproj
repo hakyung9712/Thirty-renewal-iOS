@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75613A3C2A3BD87A00CA2210 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75613A3B2A3BD87A00CA2210 /* UserService.swift */; };
+		75613A3E2A3BD88800CA2210 /* ChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75613A3D2A3BD88800CA2210 /* ChallengeService.swift */; };
+		75613A402A3BD88F00CA2210 /* ExploreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75613A3F2A3BD88F00CA2210 /* ExploreService.swift */; };
+		75613A422A3BD89600CA2210 /* CommunityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75613A412A3BD89600CA2210 /* CommunityService.swift */; };
+		75613A452A3BD8E100CA2210 /* CommonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75613A442A3BD8E100CA2210 /* CommonResponse.swift */; };
+		75613A472A3BD90C00CA2210 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75613A462A3BD90C00CA2210 /* UserEntity.swift */; };
+		75613A492A3BDA4A00CA2210 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75613A482A3BDA4A00CA2210 /* Requestable.swift */; };
 		75C480B82A3A856A00BAAE25 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C480B72A3A856A00BAAE25 /* NetworkRequest.swift */; };
 		75C480BA2A3A859500BAAE25 /* JSONConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C480B92A3A859500BAAE25 /* JSONConvertible.swift */; };
 		75C480BC2A3A872A00BAAE25 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C480BB2A3A872A00BAAE25 /* NetworkConstants.swift */; };
@@ -62,6 +69,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75613A3B2A3BD87A00CA2210 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		75613A3D2A3BD88800CA2210 /* ChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeService.swift; sourceTree = "<group>"; };
+		75613A3F2A3BD88F00CA2210 /* ExploreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreService.swift; sourceTree = "<group>"; };
+		75613A412A3BD89600CA2210 /* CommunityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityService.swift; sourceTree = "<group>"; };
+		75613A442A3BD8E100CA2210 /* CommonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonResponse.swift; sourceTree = "<group>"; };
+		75613A462A3BD90C00CA2210 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		75613A482A3BDA4A00CA2210 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		75C480B72A3A856A00BAAE25 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		75C480B92A3A859500BAAE25 /* JSONConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConvertible.swift; sourceTree = "<group>"; };
 		75C480BB2A3A872A00BAAE25 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
@@ -127,6 +141,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75613A3A2A3BD86700CA2210 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				75613A3B2A3BD87A00CA2210 /* UserService.swift */,
+				75613A3D2A3BD88800CA2210 /* ChallengeService.swift */,
+				75613A3F2A3BD88F00CA2210 /* ExploreService.swift */,
+				75613A412A3BD89600CA2210 /* CommunityService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		75613A432A3BD8D600CA2210 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				75613A442A3BD8E100CA2210 /* CommonResponse.swift */,
+				75613A462A3BD90C00CA2210 /* UserEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		F918B5362A3746D200293925 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,11 +171,14 @@
 		F918B5372A3746D800293925 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				75613A432A3BD8D600CA2210 /* Entities */,
+				75613A3A2A3BD86700CA2210 /* Service */,
 				75C480BF2A3A891800BAAE25 /* NativeRequestable.swift */,
 				75C480B72A3A856A00BAAE25 /* NetworkRequest.swift */,
 				75C480BB2A3A872A00BAAE25 /* NetworkConstants.swift */,
 				75C480BD2A3A88EF00BAAE25 /* NetworkLogger.swift */,
 				75C480B92A3A859500BAAE25 /* JSONConvertible.swift */,
+				75613A482A3BDA4A00CA2210 /* Requestable.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -397,20 +434,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75613A492A3BDA4A00CA2210 /* Requestable.swift in Sources */,
 				75C480BC2A3A872A00BAAE25 /* NetworkConstants.swift in Sources */,
 				75C480B82A3A856A00BAAE25 /* NetworkRequest.swift in Sources */,
+				75613A452A3BD8E100CA2210 /* CommonResponse.swift in Sources */,
 				F951159929FF96C700552C06 /* ContentView.swift in Sources */,
 				F951159729FF96C700552C06 /* Thirty_RenewalApp.swift in Sources */,
 				F918B54A2A3757FE00293925 /* MyMainView.swift in Sources */,
+				75613A3E2A3BD88800CA2210 /* ChallengeService.swift in Sources */,
 				75C480BA2A3A859500BAAE25 /* JSONConvertible.swift in Sources */,
 				F918B53C2A37472400293925 /* LoginView.swift in Sources */,
 				75C480BE2A3A88EF00BAAE25 /* NetworkLogger.swift in Sources */,
 				F918B55A2A375D2A00293925 /* MyInfoView.swift in Sources */,
+				75613A402A3BD88F00CA2210 /* ExploreService.swift in Sources */,
 				F918B55E2A375D3F00293925 /* MyNoticeSettingView.swift in Sources */,
 				F918B5562A375D0F00293925 /* CommunityDetailView.swift in Sources */,
 				F918B5402A37562500293925 /* NoticeView.swift in Sources */,
 				F918B5522A375CF400293925 /* CommunityFriendView.swift in Sources */,
+				75613A3C2A3BD87A00CA2210 /* UserService.swift in Sources */,
 				F918B54E2A375BA300293925 /* ChallengeAddView.swift in Sources */,
+				75613A422A3BD89600CA2210 /* CommunityService.swift in Sources */,
 				F918B54C2A37582C00293925 /* ChallengeMainView.swift in Sources */,
 				F918B5502A375BAC00293925 /* ChallengeDetailView.swift in Sources */,
 				F918B5422A37569900293925 /* ExploreMainListView.swift in Sources */,
@@ -423,6 +466,7 @@
 				F918B53E2A37515A00293925 /* SNSLoginView.swift in Sources */,
 				75C480C02A3A891800BAAE25 /* NativeRequestable.swift in Sources */,
 				F918B5622A375D5B00293925 /* MyCompleteChallengeListView.swift in Sources */,
+				75613A472A3BD90C00CA2210 /* UserEntity.swift in Sources */,
 				F918B5602A375D4D00293925 /* MyShareRangeSettingView.swift in Sources */,
 				F918B53A2A37471900293925 /* SplashView.swift in Sources */,
 				F918B5662A375D7100293925 /* MyFriendView.swift in Sources */,

@@ -23,13 +23,12 @@ public struct NetworkRequest {
     public init(headers: [String : String]?,
                 parameters: RequestParams?,
                 path: String,
-                requestTimeOut: Float,
                 httpMethod: HTTPMethod) {
         self.baseURL = BASE_URL
         self.headers = headers
         self.parameters = parameters
         self.path = path
-        self.requestTimeOut = requestTimeOut
+        self.requestTimeOut = 30
         self.httpMethod = httpMethod
     }
     
