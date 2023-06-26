@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7524D6E52A4A57F0004A8BC7 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524D6E42A4A57F0004A8BC7 /* UIColor+Extension.swift */; };
+		7524D6E72A4A5C06004A8BC7 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524D6E62A4A5C06004A8BC7 /* UITextField+Extension.swift */; };
+		7524D6E92A4A5C1D004A8BC7 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524D6E82A4A5C1D004A8BC7 /* UIApplication+Extension.swift */; };
+		7524D6EB2A4A5C32004A8BC7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524D6EA2A4A5C32004A8BC7 /* UIView+Extension.swift */; };
+		7524D6ED2A4A5C7C004A8BC7 /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524D6EC2A4A5C7C004A8BC7 /* UIUtilities.swift */; };
 		75613A3C2A3BD87A00CA2210 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75613A3B2A3BD87A00CA2210 /* UserService.swift */; };
 		75613A3E2A3BD88800CA2210 /* ChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75613A3D2A3BD88800CA2210 /* ChallengeService.swift */; };
 		75613A402A3BD88F00CA2210 /* ExploreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75613A3F2A3BD88F00CA2210 /* ExploreService.swift */; };
@@ -69,6 +74,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7524D6E42A4A57F0004A8BC7 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		7524D6E62A4A5C06004A8BC7 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		7524D6E82A4A5C1D004A8BC7 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		7524D6EA2A4A5C32004A8BC7 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		7524D6EC2A4A5C7C004A8BC7 /* UIUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
 		75613A3B2A3BD87A00CA2210 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		75613A3D2A3BD88800CA2210 /* ChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeService.swift; sourceTree = "<group>"; };
 		75613A3F2A3BD88F00CA2210 /* ExploreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreService.swift; sourceTree = "<group>"; };
@@ -141,6 +151,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7524D6E32A4A57E0004A8BC7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7524D6E42A4A57F0004A8BC7 /* UIColor+Extension.swift */,
+				7524D6E62A4A5C06004A8BC7 /* UITextField+Extension.swift */,
+				7524D6E82A4A5C1D004A8BC7 /* UIApplication+Extension.swift */,
+				7524D6EA2A4A5C32004A8BC7 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		75613A3A2A3BD86700CA2210 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +185,8 @@
 		F918B5362A3746D200293925 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				7524D6E32A4A57E0004A8BC7 /* Extension */,
+				7524D6EC2A4A5C7C004A8BC7 /* UIUtilities.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -435,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75613A492A3BDA4A00CA2210 /* Requestable.swift in Sources */,
+				7524D6E52A4A57F0004A8BC7 /* UIColor+Extension.swift in Sources */,
 				75C480BC2A3A872A00BAAE25 /* NetworkConstants.swift in Sources */,
 				75C480B82A3A856A00BAAE25 /* NetworkRequest.swift in Sources */,
 				75613A452A3BD8E100CA2210 /* CommonResponse.swift in Sources */,
@@ -445,12 +469,14 @@
 				75C480BA2A3A859500BAAE25 /* JSONConvertible.swift in Sources */,
 				F918B53C2A37472400293925 /* LoginView.swift in Sources */,
 				75C480BE2A3A88EF00BAAE25 /* NetworkLogger.swift in Sources */,
+				7524D6EB2A4A5C32004A8BC7 /* UIView+Extension.swift in Sources */,
 				F918B55A2A375D2A00293925 /* MyInfoView.swift in Sources */,
 				75613A402A3BD88F00CA2210 /* ExploreService.swift in Sources */,
 				F918B55E2A375D3F00293925 /* MyNoticeSettingView.swift in Sources */,
 				F918B5562A375D0F00293925 /* CommunityDetailView.swift in Sources */,
 				F918B5402A37562500293925 /* NoticeView.swift in Sources */,
 				F918B5522A375CF400293925 /* CommunityFriendView.swift in Sources */,
+				7524D6E92A4A5C1D004A8BC7 /* UIApplication+Extension.swift in Sources */,
 				75613A3C2A3BD87A00CA2210 /* UserService.swift in Sources */,
 				F918B54E2A375BA300293925 /* ChallengeAddView.swift in Sources */,
 				75613A422A3BD89600CA2210 /* CommunityService.swift in Sources */,
@@ -469,7 +495,9 @@
 				75613A472A3BD90C00CA2210 /* UserEntity.swift in Sources */,
 				F918B5602A375D4D00293925 /* MyShareRangeSettingView.swift in Sources */,
 				F918B53A2A37471900293925 /* SplashView.swift in Sources */,
+				7524D6E72A4A5C06004A8BC7 /* UITextField+Extension.swift in Sources */,
 				F918B5662A375D7100293925 /* MyFriendView.swift in Sources */,
+				7524D6ED2A4A5C7C004A8BC7 /* UIUtilities.swift in Sources */,
 				F918B5442A3756A800293925 /* ExploreDetailListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
